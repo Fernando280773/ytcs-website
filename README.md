@@ -1,2 +1,0 @@
-# ytcs-website
-ytcs website
