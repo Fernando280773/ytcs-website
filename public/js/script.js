@@ -1,22 +1,8 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./resources/sass/_custom.scss":
-/*!*************************************!*\
-  !*** ./resources/sass/_custom.scss ***!
-  \*************************************/
-/***/ (() => {
-
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: $color: theme-color(\"primary\") is not a color.\n    ╷\n234 │ $input-btn-focus-color: rgba(theme-color(\"primary\"), .25);\n    │                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ╵\n  resources/sass/_variables.scss 234:25  @import\n  resources/sass/_custom.scss 10:10      root stylesheet\n    at processResult (/Users/williamfernando/Desktop/ytc-website/node_modules/webpack/lib/NormalModule.js:764:19)\n    at /Users/williamfernando/Desktop/ytc-website/node_modules/webpack/lib/NormalModule.js:866:5\n    at /Users/williamfernando/Desktop/ytc-website/node_modules/loader-runner/lib/LoaderRunner.js:400:11\n    at /Users/williamfernando/Desktop/ytc-website/node_modules/loader-runner/lib/LoaderRunner.js:252:18\n    at context.callback (/Users/williamfernando/Desktop/ytc-website/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/Users/williamfernando/Desktop/ytc-website/node_modules/sass-loader/dist/index.js:69:5)");
-
-/***/ }),
-
-/***/ "./resources/js/script.js":
+var __webpack_exports__ = {};
 /*!********************************!*\
   !*** ./resources/js/script.js ***!
   \********************************/
-/***/ (() => {
-
 $(function () {
   // init feather icons
   feather.replace();
@@ -71,18 +57,5 @@ $(function () {
     $(this).addClass('active');
   });
 });
-
-/***/ })
-
-/******/ 	});
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	__webpack_modules__["./resources/js/script.js"]();
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./resources/sass/_custom.scss"]();
-/******/ 	
 /******/ })()
 ;

@@ -25,6 +25,17 @@
     text-align: justify;
     margin-bottom: 15px;
 }
+.hoverable-link {
+    color: inherit; /* Ensures the color remains consistent */
+    text-decoration: none; /* Removes the underline from links */
+}
+
+.hoverable-link:hover {
+    background-color: #f0f0f0;
+    border:solid black 0px;
+    border-radius:5px;
+    
+}
 
 
       
@@ -91,7 +102,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 mx-auto text-center">
-                        <h2 class="text-white">Our mission at YTCS is in short 5 points</h2>
+                        <h2 class="text-white">Here at YTCS</h2>
                         <p class="lead text-white my-4">Want to read about us?</p>
                         <a href="{{ route('about') }}">
                         <button class="btn btn-primary" >Read about us</button>
@@ -100,7 +111,94 @@
                 </div>
             </div>
         </section>
-
+        <section class="py-7" id="process">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mx-auto text-center">
+                        <h2>How we work</h2>
+                        <p class="lead text-muted">
+                            Donec lacus enim, ullamcorper nec lectus id, ornare finibus nunc.
+                            Eleifend option congue nihil imper.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-7 mx-auto timeline">
+                    
+                        <div class="media pb-5">
+                       
+                            <div class="icon-box mt-1">
+                                <div class="icon-box-inner small-xs text-primary">
+                                    <span data-feather="disc"></span>
+                                </div>
+                            </div>
+                            <a href="your-link-for-discovery.html" class="media pb-5 hoverable-link">
+                            <div class="media-body">
+                                <h5>Discovery</h5>
+                                <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper.</p>
+                            </div>
+                            </a>
+                        </div>
+                      
+                        <div class="media pb-5">
+                            <div class="icon-box mt-1">
+                                <div class="icon-box-inner small-xs text-primary">
+                                    <span data-feather="copy"></span>
+                                </div>
+                            </div>
+                            <a href="your-link-for-discovery.html" class="media pb-5 hoverable-link">
+                            <div class="media-body">
+                                <h5>UI/UX Design</h5>
+                                <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper.</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="media pb-5">
+                            <div class="icon-box mt-1">
+                                <div class="icon-box-inner small-xs text-primary">
+                                    <span data-feather="box"></span>
+                                </div>
+                            </div>
+                            <a href="your-link-for-discovery.html" class="media pb-5 hoverable-link">
+                            <div class="media-body">
+                                <h5>QA & Testing</h5>
+                                <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper.</p>
+                            </div>
+</a>
+                        </div>
+                        <div class="media">
+                            <div class="icon-box mt-1">
+                                <div class="icon-box-inner small-xs text-primary">
+                                    <span data-feather="server"></span>
+                                </div>
+                            </div>
+                            <a href="your-link-for-discovery.html" class="media pb-5 hoverable-link">
+                            <div class="media-body">
+                                <h5>Deployment</h5>
+                                <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper.</p>
+</div>
+</a>
+                        </div>
+                    </div>
+               
+                <div class="media">
+                            <div class="icon-box mt-1">
+                                <div class="icon-box-inner small-xs text-primary">
+                                    <span data-feather="server"></span>
+                                </div>
+                            </div>
+                            <a href="your-link-for-discovery.html" class="media pb-5 hoverable-link">
+                            <div class="media-body">
+                                <h5>why</h5>
+                                <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper.</p>
+</div>
+</a>
+                        </div>
+                    </div>
+                </div>
+               
+</div>
+        </section>
     <div class="card">
     <div class="card">
     <div class="card-body text-center">
@@ -109,9 +207,10 @@
                 <span data-feather="award" width="30" height="30"></span>
             </div>
         </div>
-        <h5 class="mt-0 mb-3">Challenges and successes</h5>
+        <h5 class="mt-0 mb-3">Tamil education</h5>
         <div class="text-block">
-        Our journey has not been without challenges. We are acutely aware of the complexities in integrating with a new cultural community. The task of making our language and culture attractive and relevant to young minds is daunting. However, our greatest successes are found within these challenges. Every child who learns a Tamil song, stutters while reciting poetry in our mother tongue, or performs a dance that echoes the rhythm of our culture is proof of our success.
+        At Yorkshire Tamil Common School (YTCS), we passionately dedicate ourselves to passing down the rich legacy of our language, Tamil, to the next generation. Teaching Tamil is more than language acquisition; it’s about connecting our children with their heritage. Experts highlight the importance of learning one's mother tongue in early development, noting its benefits in cognitive development and fostering a sense of identity. Children proficient in their native language often excel academically and find learning additional languages easier. YTCS's Tamil curriculum employs interactive activities and multimedia resources, making learning engaging and relevant, and ensuring that our young learners connect deeply with their Tamil identity.
+
         </div>
     </div>
 </div>

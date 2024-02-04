@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="{{ asset('css/default.css') }}">
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
+       
+        <script src="https://kit.fontawesome.com/b20f8e5437.js" crossorigin="anonymous"></script>
         <!--Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i" rel="stylesheet">
 
@@ -40,6 +42,13 @@
 
         <!-- Bootstrap CSS / Color Scheme -->
         <link rel="stylesheet" href="css/default.css" id="theme-color">
+        <style>
+
+        .blue-color {
+           color: blue !important; /* Use !important to override Bootstrap styles if needed */
+          }
+ 
+      </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top sticky-navigation">
@@ -55,10 +64,10 @@
                         <a class="nav-link page-scroll" href="{{ route('home') }}">Home</a>
                     </li>
                 <li class="nav-item">
-                        <a class="nav-link page-scroll" >Mission</a>
+                        <a class="nav-link page-scroll" href="{{ route('mission') }}">Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="{{ route('about') }}">About</a>
+                        <a class="nav-link page-scroll" href="#">About</a>
                     </li>
                     <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle page-scroll" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,24 +86,27 @@
                     <a href="javascript:void(0)" onclick="applyTranslation()" class="nav-link page-scroll nav-process" >தமிழ்</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#blog">Blog</a>
+                       <a class="nav-link page-scroll" href="#blog">Blog</a>
                     </li>
                 </ul>
-          
+                <!-- <form class="form-inline">
+                    <p class="mb-0 mx-3"><a class="page-scroll font-weight-bold" href="#contact">Work with us</a></p>
+                </form> -->
             </div>
         </nav>
 
 
     <br> 
-    
+<br><br>
     <section class="bg-hero py-8" style="background-image: url({{ asset('img/YTCS_website_1.png') }})">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 mx-auto text-center">
-                        <h2 class="text-white">Our mission at YTCS is in short 5 points</h2>
-                        <p class="lead text-white my-4">Want to read about us?</p>
-                        <a href="{{ route('about') }}">
-                        <button class="btn btn-primary" >Read about us</button>
+                        <h2 class="text-white">Who are we?</h2>
+                        <p class="lead text-white my-4">Read more about who we are and what we stand for at YTCS</p>
+                        <p class="lead text-white my-4">Want to see our mission?</p>
+                        <a href="{{ route('mission') }}">
+                        <button class="btn btn-primary" >Read our Mission</button>
                         </a>
                     </div>
                 </div>
@@ -106,13 +118,14 @@
     <div class="card-body text-center">
         <div class="icon-box border-box">
             <div class="icon-box-inner small-xs text-primary">
-                <span data-feather="award" width="30" height="30"></span>
+                <span data-feather="aperture" width="30" height="30"></span>
             </div>
         </div>
-        <h5 class="mt-0 mb-3">Challenges and successes</h5>
+        <h5 class="mt-0 mb-3">Introduction</h5>
         <div class="text-block">
-        Our journey has not been without challenges. We are acutely aware of the complexities in integrating with a new cultural community. The task of making our language and culture attractive and relevant to young minds is daunting. However, our greatest successes are found within these challenges. Every child who learns a Tamil song, stutters while reciting poetry in our mother tongue, or performs a dance that echoes the rhythm of our culture is proof of our success.
-        </div>
+        Welcome to Yorkshire Tamil Common School (YTCS), a distinctive educational institution born from the collective vision and effort of Tamil parents in Yorkshire. We pride ourselves on being a 100% non-profit organization, passionately dedicated to providing a quality learning environment. Our foundation is built on the unique cultural heritage of the Tamil community, reflecting our commitment to preserving and promoting our rich traditions and values. YTCS offers a diverse range of educational programs, encompassing both academic excellence and cultural enrichment.
+
+</div>
     </div>
 </div>
 <div class="card">
@@ -122,14 +135,9 @@
                 <span data-feather="check-circle" width="30" height="30"></span>
             </div>
         </div>
-        <h5 class="mt-0 mb-3">Core Mission</h5>
+        <h5 class="mt-0 mb-3">Core Values</h5>
         <div class="text-block">
-            In the heart of Yorkshire, a vibrant beacon of Tamil culture, 
-            language, and traditions is emerging. At Yorkshire Tamil Common School,
-             our mission transcends the realms of ordinary education.
-              We are not just a school; we are guardians of a legacy, 
-              committed to nurturing the roots of our Tamil heritage in the fertile soil
-               of our new environment.
+        At the heart of Yorkshire Tamil Common School is our unwavering commitment to the community. As a 100% non-profit entity, every decision and action is aimed at benefiting our students and their families. Our core values center around respect, integrity, and excellence in education, deeply rooted in the Tamil cultural ethos. For instance, our curriculum integrates traditional Tamil values with modern educational practices. We believe that education is not just about academic achievement, but also about nurturing responsible, culturally aware individuals who are ready to contribute positively to society.
         </div>
     </div>
 </div>
@@ -137,17 +145,12 @@
     <div class="card-body text-center">
         <div class="icon-box border-box">
             <div class="icon-box-inner small-xs text-primary">
-                <span data-feather="edit" width="30" height="30"></span>
+                <span data-feather="users" width="30" height="30"></span>
             </div>
         </div>
-        <h5 class="mt-0 mb-3">Duty and Responsibility</h5>
+        <h5 class="mt-0 mb-3">Community Focus</h5>
         <div class="text-block">
-        As parents, we bridge two worlds: the land of Tamil Eelam,
-         known for its lush green landscapes, self-reliant economy,
-          and a culture steeped in tradition, and our new home,
-           a land rich in ethno-linguistic diversity and at the forefront of
-            a capitalist economy. It is our prime duty and responsibility to
-             connect these two worlds for our next generation, ensuring they grow up with a solid understanding and appreciation of their ancestral culture and traditions. This task, immensely important and challenging, involves making the Tamil language, arts, and social customs resonate with the younger generation
+        At Yorkshire Tamil Common School, we firmly believe in the power of unity. Our school is more than just an educational institution; it is a vibrant hub where Tamil culture thrives and where families come together to create a strong, supportive community. We emphasize the importance of collective effort and mutual support. These values are fundamental in shaping a resilient and connected Tamil diaspora in Yorkshire. YTCS serves as a beacon, fostering cultural connections and empowering our children to carry forward the rich legacy of our heritage with pride and confidence.
         </div>
     </div>
 </div>
@@ -155,25 +158,12 @@
     <div class="card-body text-center">
         <div class="icon-box border-box">
             <div class="icon-box-inner small-xs text-primary">
-                <span data-feather="map" width="30" height="30"></span>
+                <span data-feather="user-plus" width="30" height="30"></span>
             </div>
         </div>
-        <h5 class="mt-0 mb-3">Ambitious path</h5>
+        <h5 class="mt-0 mb-3">Join us</h5>
         <div class="text-block">
-        Imagine a future where Tamil is not just a subject in a classroom, but a living, breathing part of our children's daily lives. Imagine a society where our festivals are celebrated with as much enthusiasm as those on the streets of Jaffna or Chennai. Imagine a society where our music, dance, and art not only thrive culturally but also contribute to economic development and prosperity.
-        </div>
-    </div>
-</div>
-<div class="card">
-    <div class="card-body text-center">
-        <div class="icon-box border-box">
-            <div class="icon-box-inner small-xs text-primary">
-                <span data-feather="clipboard" width="30" height="30"></span>
-            </div>
-        </div>
-        <h5 class="mt-0 mb-3">Roles and Impacts</h5>
-        <div class="text-block">
-        By joining hands with Yorkshire Tamil Common School, you are not just preserving a language or a set of traditions. You are shaping the identity of the next generation of Tamils. You are building a community that is rich in culture, strong in its sense of identity, and vibrant in its diversity.
+        We invite all Tamil parents in Yorkshire to join us in this noble journey at Yorkshire Tamil Common School. Your involvement is not just an investment in your child's future; it's a step towards building a unified and robust Tamil community. Whether through volunteering, participating in school events, or contributing ideas, your engagement is invaluable. Together, we can ensure that our children grow up in a nurturing environment that honors our rich Tamil heritage and prepares them for a bright future. Let's unite to create a legacy of education and cultural pride that will resonate for generations to come. Reach out to us today to join our community and embark on this rewarding journey with YTCS.
         </div>
     </div>
 </div>
